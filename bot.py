@@ -4,8 +4,7 @@ from disnake.ext import commands
 import config
 
 from modules.Ready import BotReady
-from FluffBot.modules.discord.event import (CooldownError, ButtonClickRole, MessageJuniper, BotMetion,
-                                            MemberJoin, MemberRemove, MessageRicRoll)
+from FluffBot.modules.discord.event import (CooldownError, ButtonClickRole, BotMetion, MemberJoin, MemberRemove, MessageRicRoll)
 
 from FluffBot.modules.discord.command import (Clicker, Roulette, Sex, CPU, Currency, Shoot, Send, Profile)
 from FluffBot.modules.discord.command.IQUp.IQMathTest import Test
@@ -50,8 +49,6 @@ FluffBot.add_cog(AntiSpam.AntiSpam(FluffBot))  # анти спам
 
 # ответы на сообщения
 FluffBot.add_cog(MessageRicRoll.RicRoll(FluffBot))  # ответ на рик рол
-FluffBot.add_cog(MessageJuniper.juniper(FluffBot))  # ответ на сообщение JuniperBot
-FluffBot.add_cog(BotMetion.Metion(FluffBot))  # упоминание бота (в разработке)
 FluffBot.add_cog(IQEv(FluffBot))  # IQ
 
 FluffBot.run(config.TOKEN)
