@@ -8,7 +8,7 @@ prefix = f'<@{BotId}>'  # prefix
 # └─ List ▧︎
 ListUpdatePreDelay = 300  # pre update delay
 ListUpdateDelay = 60  # update delay
-CurrencyListChannel = 1257607615756894249  # list channel
+CurrencyListChannel = CHANNELID  # list channel
 # └─ File
 CurrencyFile = 'путь к пайчарму или хз/FluffBot/modules/FanModules/currency/currency.json'  # currency data file
 
