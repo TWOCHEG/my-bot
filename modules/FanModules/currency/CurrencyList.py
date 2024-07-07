@@ -13,8 +13,8 @@ class CurrencyList(commands.Cog):
         self.last_currency_state = {}
 
     async def update_currency(self):
+        await asyncio.sleep(config.ListUpdatePreDelay)  # предв задержка
         while True:
-            await asyncio.sleep(config.ListUpdatePreDelay)  # предварительная задержка
             with open(self.currency_file_path, 'r') as f:
                 currency = json.load(f)
 
