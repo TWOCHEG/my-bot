@@ -11,7 +11,7 @@ class AntiSpam(commands.Cog):
         self.spam_count = {}
 
     async def SpamCheck(self, message):
-        for god in config.GodList:  # участники на который не будет работать антиспам
+        for god in config.GodList:  # участники на которых не будет работать антиспам
             if message.author.id == god:
                 return
 
