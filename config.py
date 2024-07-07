@@ -1,6 +1,6 @@
 # ──────────────────────────◄ ✓ bot ►──────────────────────────
 BotId = YOURBOTID  # bot id
-TOKEN = YOURBOTTOKEN  # ●︎ bot token
+TOKEN = YOURBOTTOKEN  # bot token
 CommandCooldown = 60  # commands delay
 prefix = f'<@{BotId}>'  # prefix
 
