@@ -36,7 +36,7 @@ LinkWhiteList = [
 OwnerId = YOURID  # your id
 GuildId = YOURGUILDID  # guild id
 GirlId = ID  # /sex age fix
-VerifyRole = ROLEID  # роль которая должна выдаватся участнику после прохождения верификации
+VerifyRole = ROLEID  # роль которая должна выдаватся участнику после прохождения верификации (чтобы это работало загляните в файл /modules/discord/verify)
 GodList = [BotId, OwnerId]  # участники на которых небудет работать авто мод и мут в рулетке
 
 # ──────────────────────────◄ hello\goodbye ►──────────────────────────
