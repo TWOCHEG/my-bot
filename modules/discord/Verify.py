@@ -4,6 +4,12 @@ import random
 import asyncio
 from FluffBot import config
 
+# для работы этого модуля вам нужно отправить спомошью бота сооющение в любой канал с конпой кастомный айди 'начать' пример :
+#@commands.Cog.listener()
+#async def on_message(self, message):
+    #if 'хуй' in message.content:
+        #channel = CHANNELID
+        #await channel.send('верификация', components=disnake.ui.Button(label='начать', style=disnake.ButtonStyle.success, custom_id='начать'))
 
 class Verification(commands.Cog):
     def __init__(self, bot):
@@ -11,7 +17,7 @@ class Verification(commands.Cog):
 
     @commands.Cog.listener()
     async def on_button_click(self, inter: disnake.MessageInteraction):
-        RoleVerify = disnake.utils.get(inter.user.guild.roles, id=1152573566571790437)
+        RoleVerify = disnake.utils.get(inter.user.guild.roles, id=config.VerifyRole)
         if inter.component.custom_id not in ['начать', 'True', 'False']:
             return
 
