@@ -4,13 +4,13 @@ import psutil
 from FluffBot import config
 
 
-class CpuCommand(commands.Cog):
+class botCommand(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
 
     @commands.cooldown(1, config.CommandCooldown, commands.BucketType.user)  # задержка на использование
-    @commands.slash_command(description='покажет cpu бота')
-    async def cpu(self, ctx):
+    @commands.slash_command(description='информация о боте')
+    async def bot(self, ctx):
         cpu = int(psutil.cpu_percent())
         if cpu >= 0:
             cpu = 'отличное'
@@ -27,7 +27,7 @@ class CpuCommand(commands.Cog):
 
         embed = disnake.Embed(
             title='информация о CPU бота',
-            description=f'пинг - `{round(self.bot.latency * 1000)} мс` \nCPU - `{psutil.cpu_percent()}%` \nОЗУ - `{psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}%` \nобщее состояние - `{cpu}`',
+            description=f'пинг - `{round(self.bot.latency * 1000)} мс` \nCPU - `{psutil.cpu_percent()}%` \nОЗУ - `{psutil.virtual_memory().available * 100 / psutil.virtual_memory().total}%` \nобщее состояние - `{cpu}` \nhttps://github.com/TWOCHEG/my-bot',
             color=color
         )
 
@@ -37,4 +37,4 @@ class CpuCommand(commands.Cog):
 
 
 def setup(bot: commands.Bot):
-    bot.add_cog(CpuCommand(bot))
+    bot.add_cog(botCommand(bot))
