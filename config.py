@@ -10,7 +10,7 @@ ListUpdatePreDelay = 300  # pre update delay
 ListUpdateDelay = 60  # update delay
 CurrencyListChannel = 1257607615756894249  # list channel
 # └─ File
-CurrencyFile = 'путь к пайчарму или хз/FluffBot/modules/FanModules/currency/currency.json'  # ●︎ currency data file
+CurrencyFile = 'путь к пайчарму или хз/FluffBot/modules/FanModules/currency/currency.json'  # currency data file
 
 # ──────────────────────────◄ ✎ AutoMod ►──────────────────────────
 # └─ AntiSpam ⌨︎
@@ -36,7 +36,8 @@ LinkWhiteList = [
 OwnerId = YOURID  # your id
 GuildId = YOURGUILDID  # guild id
 GirlId = ID  # /sex age fix
-GodList = [BotId, OwnerId]  # no mute\no trigger anti spam\no roulette timeout
+VerifyRole = ROLEID  # роль которая должна выдаватся участнику после прохождения верификации
+GodList = [BotId, OwnerId]  # участники на которых небудет работать авто мод и мут в рулетке
 
 # ──────────────────────────◄ hello\goodbye ►──────────────────────────
 MemberJoinChannel = CHANNELID  # join channel id
