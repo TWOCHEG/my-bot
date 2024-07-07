@@ -12,25 +12,22 @@ class MemberJoin(Cog):
 
     @Cog.listener()
     async def on_member_join(self, member):
-        channel = self.bot.get_channel(config.MemberJoinChannel)  # Получаем канал приветствия
+        channel = self.bot.get_channel(config.MemberJoinChannel)
 
         # Получаем список приглашений на сервере до присоединения участника
         invites_before_join = await member.guild.invites()
 
-        # Вызываем функцию для получения IQ пользователя
         iq(user=member)
 
-        # Определяем цвет аватара пользователя
+        # цвет аватара
         if member.avatar is not None:
             color = process_avatar(member)
         else:
             color = 0x23272A
 
-        # Читаем JSON счетчика IQ
         with open(config.iq, 'r') as f:
             iq_count = json.load(f)
 
-        # Получаем текущий IQ пользователя
         iq_user = iq_count.get(str(member.id), 'не удалось вывести IQ...')
 
         # Получаем список приглашений на сервере после присоединения участника
@@ -47,7 +44,6 @@ class MemberJoin(Cog):
             if inviter_name != 'не удалось найти...':  # Если нашли имя пригласившего, выходим из цикла
                 break
 
-        # Формируем Embed сообщение для приветствия
         embed = disnake.Embed(
             title=f'{member.name}, ты #{member.guild.member_count} участник',
             description=f'✅верификация - https://discord.com/channels/1152572002088009749/1188213227620925531 \n🚫правила - https://discord.com/channels/1152572002088009749/1181974685773217824 \nего пригласил `{inviter_name}`\nIQ : {iq_user}',
@@ -55,10 +51,9 @@ class MemberJoin(Cog):
         )
         embed.set_thumbnail(url=member.avatar.url)
 
-        # Отправляем сообщение приветствия
+        # сообщение
         await channel.send(f'Привет <@{member.id}>🎉', embed=embed)
 
-        # Выводим оповещение в консоль
         print(f'{config.console_event} присоединился участник - {member.name}, пригласил {inviter_name}')
 
 def setup(bot):
