@@ -1,14 +1,6 @@
-
-#       ███████╗██╗░░░░░██╗░░░██╗███████╗███████╗██████╗░░█████╗░████████╗
-#       ██╔════╝██║░░░░░██║░░░██║██╔════╝██╔════╝██╔══██╗██╔══██╗╚══██╔══╝
-#       █████╗░░██║░░░░░██║░░░██║█████╗░░█████╗░░██████╦╝██║░░██║░░░██║░░░
-#       ██╔══╝░░██║░░░░░██║░░░██║██╔══╝░░██╔══╝░░██╔══██╗██║░░██║░░░██║░░░
-#       ██║░░░░░███████╗╚██████╔╝██║░░░░░██║░░░░░██████╦╝╚█████╔╝░░░██║░░░
-#       ╚═╝░░░░░╚══════╝░╚═════╝░╚═╝░░░░░╚═╝░░░░░╚═════╝░░╚════╝░░░░╚═╝░░░
-
 # ──────────────────────────◄ ✓ bot ►──────────────────────────
-BotId = 1252608043926159410  # bot id
-TOKEN = 'MTI1MjYwODA0MzkyNjE1OTQxMA.GpKbLi.2I7OPeEROva9JW-MZ5wIFk4GEcPSSRLCS-Kyzo'  # ●︎ bot token
+BotId = YOURBOTID  # bot id
+TOKEN = YOURBOTTOKEN  # ●︎ bot token
 CommandCooldown = 60  # commands delay
 prefix = f'<@{BotId}>'  # prefix
 
@@ -18,7 +10,7 @@ ListUpdatePreDelay = 300  # pre update delay
 ListUpdateDelay = 60  # update delay
 CurrencyListChannel = 1257607615756894249  # list channel
 # └─ File
-CurrencyFile = 'C:/Users/maxim/PycharmProjects/BOT/FluffBot/modules/FanModules/currency/currency.json'  # ●︎ currency data file
+CurrencyFile = 'путь к пайчарму или хз/FluffBot/modules/FanModules/currency/currency.json'  # ●︎ currency data file
 
 # ──────────────────────────◄ ✎ AutoMod ►──────────────────────────
 # └─ AntiSpam ⌨︎
@@ -41,19 +33,18 @@ LinkWhiteList = [
         ]
 
 # ──────────────────────────◄ ▤ id ►──────────────────────────
-OwnerId = 1043894556078379099  # your id
-GuildId = 1152572002088009749  # guild id
-GirlId = 929722649159008256  # /sex age fix
-JuniperId = 310848622642069504  # JuniperBot
+OwnerId = YOURID  # your id
+GuildId = YOURGUILDID  # guild id
+GirlId = ID  # /sex age fix
 GodList = [BotId, OwnerId]  # no mute\no trigger anti spam\no roulette timeout
 
 # ──────────────────────────◄ hello\goodbye ►──────────────────────────
-MemberJoinChannel = 1230866850905198592  # join channel id
-MemberRemoveChannel = 1230866850905198592  # remove channel id
-AvatarTemp = 'C:/Users/maxim/PycharmProjects/BOT/FluffBot/modules/AvatarProces/avatar_temp/'  # avatar average color
+MemberJoinChannel = CHANNELID  # join channel id
+MemberRemoveChannel = CHANNELID  # remove channel id
+AvatarTemp = 'путь к пайчарму или хз/FluffBot/modules/AvatarProces/avatar_temp/'  # avatar average color
 
 # ──────────────────────────◄ ¾ iq ►──────────────────────────
-iq = 'C:/Users/maxim/PycharmProjects/BOT/FluffBot/modules/FanModules/IQ/IQ.json'  # data file
+iq = 'путь к пайчарму или хз/BOT/FluffBot/modules/FanModules/IQ/IQ.json'  # data file
 
 # ──────────────────────────◄ оформление консоли ►──────────────────────────
 console_bot = '[B] | '
