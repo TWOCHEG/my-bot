@@ -34,7 +34,6 @@ FluffBot.add_cog(Profile.ProfileCommand(FluffBot))  # / профиль
 FluffBot.add_cog(Send.SendCommand(FluffBot))  # / отправить сообщение\встраивание
 FluffBot.add_cog(Clicker.ClickCommand(FluffBot))  # / clicker
 FluffBot.add_cog(Currency.CurrencyCommand(FluffBot))  # / баланс
-FluffBot.add_cog(Test(FluffBot))  # / iq
 
 # cog event
 FluffBot.add_cog(Verification(FluffBot))  # верификация
