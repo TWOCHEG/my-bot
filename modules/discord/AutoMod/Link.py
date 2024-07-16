@@ -14,11 +14,7 @@ class LinkAutoMod(commands.Cog):
     async def on_message(self, message: disnake.Message):
         if message.author == self.bot.user:
             return
-
-        # Проверяем только сообщения с текстом
-        if not message.content:
-            return
-
+
         contains_unwhitelisted_link = await self.contains_unwhitelisted_link(message.content)
 
         if contains_unwhitelisted_link:
