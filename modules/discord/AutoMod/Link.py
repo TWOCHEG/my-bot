@@ -28,8 +28,8 @@ class LinkAutoMod(commands.Cog):
                 colour=0xeb459e,
             )
             embed.add_field(
-                name='```white list:```',
-                value='\n'.join([f'{url}' for url in self.whitelist])
+                name='white list:',
+                value='```' + '\n'.join([f'{url}' for url in self.whitelist]) + '```'
             )
 
             await message.channel.send(f'{message.author.mention}', embed=embed)
