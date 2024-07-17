@@ -60,6 +60,7 @@ requests
 ### верификация
 
 для ее работы вам нужно все отредактировать и настроить все в файле `mobules\discord\verify.py`
+![скрин](https://github.com/user-attachments/assets/16eda9fc-2069-49c3-b37f-280c9635bb49)
 
 ### автомод `A`
 
