@@ -84,6 +84,8 @@ requests
 
 - работает через функции которые вы можете найти в файле `modules/FanModules/currency/DefCurrency`
 
+![скрин](https://github.com/user-attachments/assets/a59d4ba3-e35a-4e6e-b65f-7189e5f2e1a3)
+
 #### IQ
 
 `сохраняется в json`
