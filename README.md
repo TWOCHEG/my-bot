@@ -94,6 +94,10 @@ requests
 
 - если вы будете использовать функции `remove/add_iq` на участника у которого его по какой-то причине нету ему автоматически сгенерируется IQ
 
+![iq](https://github.com/user-attachments/assets/07c012be-b173-4088-8484-5410c4ee043f)
+
+![iq](https://github.com/user-attachments/assets/94bbbf49-7faa-4b0c-9a68-60fe98da03e7)
+
 > незнаю зачем я это сделал
 
 > точно не с пизжено с тундер комьнити
@@ -101,6 +105,8 @@ requests
 ### средний цвет аватарки участника
 
 - на этот модуль есть отдельный [репозиторий](https://github.com/TWOCHEG/discord-color-avatar) с инструкцией и описанием
+
+![средний цет](https://github.com/user-attachments/assets/9d68e4c2-0a20-4f08-8ea8-2896c40367f6)
 
 --------------------------------------------
 
