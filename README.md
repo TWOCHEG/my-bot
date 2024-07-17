@@ -71,7 +71,7 @@ requests
 
 ### рп хуйня\fan modules `RP`
 
-валюта:
+#### валюта
 
 `сохраняется в json`
 
@@ -81,7 +81,7 @@ requests
 
 - работает через функции которые вы можете найти в файле `modules/FanModules/currency/DefCurrency`
 
-iq:
+#### iq
 
 `сохраняется в json`
 
