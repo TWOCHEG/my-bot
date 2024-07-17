@@ -66,7 +66,7 @@
 
 - северная валюта которую можно выиграть в `/рулетка` или в `/кликер` 
 
-- магазин : ![скрин](https://github.com/user-attachments/assets/11f09abc-9766-4822-9239-5c074067936c) работает это просто , вам нужно отправить кнопки с кастомным айди и подставить айди своих ролей в файле `modules/FanModules/currency/ShopCurrency.py`, если вы незнаете нечего про кнопки то вам `[сюда](https://guide.disnake.dev/interactions/buttons)`
+- магазин : ![скрин](https://github.com/user-attachments/assets/11f09abc-9766-4822-9239-5c074067936c) работает это просто , вам нужно отправить кнопки с кастомным айди и подставить айди своих ролей в файле `modules/FanModules/currency/ShopCurrency.py`, если вы незнаете нечего про кнопки то вам [сюда](https://guide.disnake.dev/interactions/buttons)
 
 - работает через функции которые вы можете найти в файле `modules/FanModules/currency/DefCurrency`
 
@@ -86,6 +86,6 @@ iq:
 
 ## конец
 
-если вы достали или дочитали аш до сюда то я бы был очень рад еслиб вы посетили мой дс севрер - https://discord.gg/KbdqrhV3GH
+если вы достали или дочитали аш до сюда то я бы был очень рад еслиб вы посетили мой дс [севрер](https://discord.gg/KbdqrhV3GH)
 
-:)
+`:)`
