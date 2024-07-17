@@ -12,6 +12,7 @@ disnake
 pillow
 os
 psutil
+requests
 ```
 
 ## функционал ✔︎
