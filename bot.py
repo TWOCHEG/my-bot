@@ -50,8 +50,7 @@ FluffBot.add_cog(AntiSpam.AntiSpam(FluffBot))  # анти спам
 
 # ответы на сообщения
 FluffBot.add_cog(MessageRicRoll.RicRoll(FluffBot))  # ответ на рик рол
-FluffBot.add_cog(MessageJuniper.juniper(FluffBot))  # ответ на сообщение JuniperBot
-FluffBot.add_cog(BotMetion.Metion(FluffBot))  # упоминание бота (в разработке)
+FluffBot.add_cog(MessageJuniper.juniper(FluffBot))  # ответ на сообщение JuniperBot
 FluffBot.add_cog(IQEv(FluffBot))  # IQ
 
 FluffBot.run(config.TOKEN)
